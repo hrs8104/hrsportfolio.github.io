@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+        <title>Portfolio Site</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4dfcf81312.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/hrslogo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">PortFolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Designer</p>
+                    <h1>Hi, I'm <span>Harsh </span><br>Mewada from India</h1>
+                </div>
+            </div>
+        </div>
+        <!--<hr height="5px" color="#4d0695" >-->
+        <!---About-------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/I.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I'm a Web Devloper and UI Designer from Ahmedabad,India.I 
+                            enjoy taking complex problems and turing them into simple
+                            and beautiful interface Designs.I also love the logic and 
+                            structure of codingand always strive to write elegant and
+                            efficient code,whether it be HTML,CSS or JAVASCRIPT.When 
+                            I'm not coding or pushing pixels,you'll find me in the gym
+                            or on the court shooting some hoops.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Devlopment</span><br>Web Designer</li>
+                                <li><span>App Devlopment</span><br>Building Android/ios Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>UI/UX Design Trainingn at It Dev.</li>
+                                <li><span>2022 - 2023</span><br>Team lead at StartApp LLC.</li>
+                               <!---<li><span>App Devlopment</span><br>Building Android/ios Apps</li>-->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>UI/UX Design Trainingn at It Dev.</li>
+                                <li><span>2021</span><br>BCA from NGCCA AHMEDABAD</li>
+                                <li><span>2020</span><br>12th from POOJA SCHOOL AHMEDABAD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<hr  width="" height="5px" color="#4d0695">-->
+        <!-------------Services--------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I Do All Kinds of Work Related to Web Sites.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>I Do All Kinds of Work Related to UI/UX Design.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Devlopment</h2>
+                        <p>I Do All Kinds of Work Related to App Devlopment.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<hr height="5px" color="#4d0695">
+       ---------------------------------Portfolio------------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you yo the talented people around the world.
+                            Download it from Play Store.</p>
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you yo the talented people around the world.
+                            Download it from Play Store.</p>
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app connects you yo the talented people around the world.
+                            Download it from Play Store.</p>
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+<!----------------------------------------contact-------------------------------------->
+        <div id="contact">
+            <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>harshmevada8104@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 93134 74425</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div> 
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-solid fa-copyright"></i> Harsh.Made With <i class="fa-solid fa-heart"></i> by Harsh</p>
+            </div>
+        </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        const msg = document.getElementById("msg");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    </body>
+</html>
